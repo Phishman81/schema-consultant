@@ -10,9 +10,6 @@ url = st.text_input("Enter a URL:")
 if url:
     html_content = fetch_html(url)
     text_content = extract_text(html_content)
-    st.write("Here is the continuation of the `app.py` file:
-
-```python
     st.write("Here is the extracted text content:")
     st.write(text_content)
     
